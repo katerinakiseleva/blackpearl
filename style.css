@@ -913,7 +913,6 @@ body {
 .site-branding{
 	text-align: center;
 	padding:2px;
-	float:left;
 }
 .site-title {
 	font-size: 3em;
@@ -956,11 +955,58 @@ body {
 	position: relative;
 }
 
+/*--------------------------------------------------------------
+## Responsiveness - Most of the responsive code is used from lab 2
+--------------------------------------------------------------*/
+
+#page {
+	font-weight: 400;
+	line-height: 125%;
+	margin: 2em auto;
+	position: relative;
+	width:90%;
+}
+#site-navigation {
+	height: 100%; /*36px / 16px*/
+	line-height: 2.25em;
+  position: relative;
+	margin: 0.75em 0 3em; /*12px/ 16px 48px / 16px */
+	text-align: center;
+  width: 100%;
+}
+#site-navigation ul {
+	list-style-type: none;
+	margin: auto;
+	width: auto;
+}
+#site-navigation ul li {
+	display: inline-block;
+}
+
+#site-navigation ul li a a:hover {
+	font-weight: normal;
+	padding: 0.1em;
+	text-decoration: none;
+	text-transform: lowercase;
+}
+
+#primary {
+	float: left;
+	padding: 1.8em;
+	max-width: 100%;
+}
+
+#content {
+  position: relative;
+	margin: 0.75em 0 3em; /*12px/ 16px 48px / 16px */
+  width: 100%;
+}
+.site-info {
+	position: relative;
+}
 
 
-
-
-@media screen and (max-width: 750px) {
+/* @media screen and (max-width: 750px) {
 	#main {
 		float: left;
 		max-width: 45%;
@@ -977,7 +1023,7 @@ body {
   }
 }
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
 	#main {
 		float: left;
 		max-width: 45%;
@@ -1013,4 +1059,4 @@ body {
 	.menu-toggle {
 		display: none;
 	}
-}
+} */
