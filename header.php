@@ -17,6 +17,8 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+
+
 <?php wp_head(); ?>
 </head>
 
@@ -45,7 +47,7 @@
 		if (isset($options['ek_checkbox_field']) =='on'){
 			echo$options['ek_checkbox_field'] .'<br />';
 		} else {
-			echo'off <br />';
+			echo'';
 		}
 		echo$options['ek_radio_field'] .'<br />';
 		echo$options['ek_textarea_field'] .'<br />';

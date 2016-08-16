@@ -27,6 +27,14 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+<?php $options=get_option( 'ek_options_settings' ); ?>
+
+<style>
+#entry-content{
+	background-color:  <?php echo $options['ek_options_settings']; ?>
+}
+</style>
+
 		<?php
 			the_content( sprintf(
 				/* translators: %s: Name of current post. */

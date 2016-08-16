@@ -912,31 +912,105 @@ body {
 
 .site-branding{
 	text-align: center;
+	padding:2px;
+	float:left;
 }
 .site-title {
-	font-size: 2em;
+	font-size: 3em;
 	font-family: 'Poiret One', cursive;
 	font-weight: bold;
 }
+.site-title a {
+	text-decoration: none;
+}
 .site-description {
+	font-size: 1.5em;
 	font-family: 'Dancing Script', cursive;
 }
+
 #content {
+	padding: 20px;
 	background: #FFF8F9;
-	opacity: 0.8
+	opacity: 0.9;
 }
 .site-header {
 	background-color: #ecd7da;
-	margin: 100px solid 1px black;
 }
 .site-info {
 	background-color: #ecd7da;
 }
 
 .main-navigation {
+	font-size: 1.2em;
 	padding-top: 0;
 }
 
 #masthead{
-	margin: 100px solid 1px black;
+	padding-top: 50px;
+	opacity: 0.7;
+}
+
+#site-navigation{
+	height: 100%;
+	width:100%;
+	position: relative;
+}
+
+
+
+
+
+@media screen and (max-width: 750px) {
+	#main {
+		float: left;
+		max-width: 45%;
+	}
+	#site-navigation {
+		float: left;
+		max-width: 45%;
+		padding: 5em 2em 0 0;
+		position: relative;
+		width: 100%;
+	}
+#masthead{
+	position: relative;
+  }
+}
+
+@media screen and (max-width: 480px) {
+	#main {
+		float: left;
+		max-width: 45%;
+	}
+	#site-navigation {
+		float: left;
+		max-width: 45%;
+		padding: 5em 2em 0 0;
+		position: relative;
+		width: 100%;
+	}
+	#masthead{
+		position: relative;
+	}
+	.menu-toggle {
+		display: block;
+	}
+	.toggled #menu-main-items{
+		display: none;
+	}
+}
+
+@media only sreen and (min-width:550px) {
+	#menu-main-items{
+		display: none;
+	}
+	#masthead{
+		position: relative;
+	}
+	.hide-except-mobile {
+		display: none;
+	}
+	.menu-toggle {
+		display: none;
+	}
 }

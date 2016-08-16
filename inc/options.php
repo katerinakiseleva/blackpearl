@@ -95,8 +95,8 @@ function ek_settings_init() {
 		$options = get_option( 'ek_options_settings' );
 		?>
 		<select name="ek_options_settings[ek_select_field]">
-			<option value="1" <?php if (isset($options['ek_select_field'])) selected( $options['ek_select_field'], 1 ); ?>>Option 1</option>
-			<option value="2" <?php if (isset($options['ek_select_field'])) selected( $options['ek_select_field'], 2 ); ?>>Option 2</option>
+			<option value="#6495ed" <?php if (isset($options['ek_select_field'])) selected( $options['ek_select_field'], 1 ); ?>>Light Blue</option>
+			<option value="#a9a9a9" <?php if (isset($options['ek_select_field'])) selected( $options['ek_select_field'], 2 ); ?>>Grey</option>
 		</select>
 	<?php
 	}
