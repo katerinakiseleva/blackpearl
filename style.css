@@ -1,3 +1,4 @@
+
 /*
 Theme Name: blackpearl
 Theme URI: http://underscores.me/
@@ -50,12 +51,10 @@ html {
 	font-family: sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust:     100%;
-	background-color: pink;
 }
 
 body {
 	margin: 0;
-	background-color: pink;
 }
 
 article,
@@ -272,7 +271,7 @@ textarea {
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
-	background-color: pink;
+	background-color: #ecd7da;
 }
 
 h1,
@@ -354,7 +353,7 @@ html {
 }
 
 body {
-	background: yellow; /* Fallback for when there is no custom background color defined. */
+	background-color: url('img/bubble.jpg'); /* Fallback for when there is no custom background color defined. */
 }
 
 blockquote:before,
@@ -539,7 +538,7 @@ a:active {
 	display: block;
 	float: left;
 	width: 100%;
-	background: blue;
+	background: #988D90;
 	position: static;
 	padding-left:77px;
 }
@@ -903,10 +902,41 @@ object {
 /* KATE's edit muahhaha */
 body {
 	width: 900px;
-	background: white;
+	background: url('img/bubble.jpg');
+	background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 	margin: auto;
+	font-family: 'Poiret One', cursive;
 }
 
 .site-branding{
 	text-align: center;
+}
+.site-title {
+	font-size: 2em;
+	font-family: 'Poiret One', cursive;
+	font-weight: bold;
+}
+.site-description {
+	font-family: 'Dancing Script', cursive;
+}
+#content {
+	background: #FFF8F9;
+	opacity: 0.8
+}
+.site-header {
+	background-color: #ecd7da;
+	margin: 100px solid 1px black;
+}
+.site-info {
+	background-color: #ecd7da;
+}
+
+.main-navigation {
+	padding-top: 0;
+}
+
+#masthead{
+	margin: 100px solid 1px black;
 }

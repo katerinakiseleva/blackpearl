@@ -40,7 +40,16 @@
 			<?php
 			endif; ?>
 		</div><!-- .site-branding -->
-
+		<?php $options=get_option( 'ek_options_settings' );
+		echo$options['ek_text_field'] .'<br />';
+		if (isset($options['ek_checkbox_field']) =='on'){
+			echo$options['ek_checkbox_field'] .'<br />';
+		} else {
+			echo'off <br />';
+		}
+		echo$options['ek_radio_field'] .'<br />';
+		echo$options['ek_textarea_field'] .'<br />';
+		echo$options['ek_select_field']; ?>
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'blackpearl' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>

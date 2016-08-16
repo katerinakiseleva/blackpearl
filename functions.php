@@ -138,3 +138,10 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+function google_fonts() {
+	wp_enqueue_style('google_font', 'https://fonts.googleapis.com/css?family=Poiret+One');
+
+}
+add_action('wp_enqueue_scripts', 'google_fonts');
+
+require get_stylesheet_directory() .'/inc/options.php';
