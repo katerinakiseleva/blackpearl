@@ -898,13 +898,11 @@ object {
 .gallery-caption {
 	display: block;
 }
-@media screen and (max-width: 1400px) {
-/* KATE's edit muahhaha */
+/* KATE's edits */
 body {
-	width: 900px;
+	width: 90%;
 	background: url('image/bubble.jpg');
 	background-size: cover;
-  background-repeat: no-repeat;
   background-position: center center;
 	margin: auto;
 	font-family: 'Poiret One', cursive;
@@ -912,7 +910,7 @@ body {
 
 .site-branding{
 	text-align: center;
-	padding:2px;
+	padding:0.125em;
 }
 .site-title {
 	font-size: 3em;
@@ -926,7 +924,9 @@ body {
 	font-size: 1.5em;
 	font-family: 'Dancing Script', cursive;
 }
-
+.entry-content {
+	position: relative;
+}
 #content {
 	padding: 1.25em;
 	background: #F3E7E8;
@@ -959,114 +959,36 @@ body {
 	position: relative;
 }
 
+.entry-meta{
+	width:100%;
+}
+
 /*--------------------------------------------------------------
-## Responsiveness - Most of the responsive code is used from lab 2
+## Responsiveness - Most of the responsive code is used from lab 2 as guidance for this theme.
 --------------------------------------------------------------*/
 
-#page {
-	font-weight: 400;
-	line-height: 125%;
-	position: relative;
-	width:90%;
-}
-#site-navigation {
-	height: 100%; /*36px / 16px*/
-	line-height: 2.25em;
-  position: relative;
-	text-align: center;
-  width: 100%;
-}
-#site-navigation ul {
-	list-style-type: none;
-	margin: auto;
-	width: auto;
-	position: relative;
-}
-#site-navigation ul li {
-	display: inline-block;
-	position: relative;
-}
-
-#site-navigation ul li a a:hover {
-	font-weight: normal;
-	padding: 0.1em;
-	text-decoration: none;
-	text-transform: lowercase;
-	position: relative;
-}
-
-#content {
-  position: relative;
-	margin: 0.75em 0 3em; /*12px/ 16px 48px / 16px */
-  width: 100%;
-}
-.site-info {
-	position: relative;
-}
 
 .statement { /* This is to style the annoucement from the options page on site. */
 	text-align: center;
 	font-size: 3em;
-	position: relative;
 }
 .homecustompost {
 	float: left;
 	width: 30%;
-	position: relative;
-}
 }
 
-/* @media screen and (max-width: 750px) {
-	#main {
-		float: left;
-		max-width: 45%;
-	}
-	#site-navigation {
-		float: left;
-		max-width: 45%;
-		padding: 5em 2em 0 0;
-		position: relative;
-		width: 100%;
-	}
-#masthead{
-	position: relative;
-  }
-}
 
-/* @media screen and (max-width: 480px) {
-	#main {
+@media screen and (max-width: 850px) {
+	.homecustompost {
 		float: left;
-		max-width: 45%;
-	}
-	#site-navigation {
-		float: left;
-		max-width: 45%;
-		padding: 5em 2em 0 0;
-		position: relative;
-		width: 100%;
-	}
-	#masthead{
-		position: relative;
-	}
-	.menu-toggle {
-		display: block;
-	}
-	.toggled #menu-main-items{
-		display: none;
+		width: 40%;
 	}
 }
 
-@media only sreen and (min-width:550px) {
-	#menu-main-items{
-		display: none;
+@media only sreen and (min-width:500px) {
+	.homecustompost {
+		float: left;
+		width: 75%;
+		clear: both;
 	}
-	#masthead{
-		position: relative;
-	}
-	.hide-except-mobile {
-		display: none;
-	}
-	.menu-toggle {
-		display: none;
-	}
-} */
+}
