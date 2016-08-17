@@ -19,7 +19,7 @@ get_header(); ?>
 <?php $options=get_option( 'ek_options_settings' ); ?>
     <!-- Custom style from options page -->
     <style>
-        div.site-info {
+        div#content.site-content {
 	       background-color: <?php echo $options['ek_radio_field']; ?>
         }
     </style>

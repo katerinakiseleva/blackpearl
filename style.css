@@ -929,14 +929,14 @@ body {
 
 #content {
 	padding: 20px;
-	background: #FFF8F9;
+	background: #F3E7E8;
 	opacity: 0.9;
 }
 .site-header {
-	background-color: #ecd7da;
+	background-color: #EFDFE1;
 }
 .site-info {
-	background-color: #ecd7da;
+	background-color: #EFDFE1;
 }
 
 .main-navigation {
@@ -995,6 +995,12 @@ body {
 }
 .site-info {
 	position: relative;
+}
+
+.statement {
+	padding: 2em;
+	margin:2em;
+	color: red;
 }
 
 

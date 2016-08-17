@@ -22,7 +22,7 @@ function ek_settings_init() {
 
 	add_settings_field(
 		'ek_text_field',
-		'Enter your text',
+		'Place Announcement Here',
 		'ek_text_field_render',
 		'theme_options',
 		'ek_options_page_section'
@@ -52,13 +52,6 @@ function ek_settings_init() {
 		'ek_options_page_section'
 	);
 
-	add_settings_field(
-		'ek_select_field',
-		'Choose from the dropdown',
-		'ek_select_field_render',
-		'theme_options',
-		'ek_options_page_section'
-	);
 
 	function ek_text_field_render() {
 		$options = get_option( 'ek_options_settings' );
@@ -89,16 +82,6 @@ function ek_settings_init() {
 		?>
 		<textarea cols="40" rows="5" name="ek_options_settings[ek_textarea_field]"><?php if (isset($options['ek_textarea_field'])) echo $options['ek_textarea_field']; ?></textarea>
 		<?php
-	}
-
-	function ek_select_field_render() {
-		$options = get_option( 'ek_options_settings' );
-		?>
-		<select name="ek_options_settings[ek_select_field]">
-			<option value="red" <?php if (isset($options['ek_select_field'])) selected( $options['ek_select_field'], 1 ); ?>>Light Blue</option>
-			<option value="#a9a9a9" <?php if (isset($options['ek_select_field'])) selected( $options['ek_select_field'], 2 ); ?>>Grey</option>
-		</select>
-	<?php
 	}
 
 	function my_theme_options_page(){
