@@ -78,9 +78,9 @@ function ek_settings_init() {
 	function ek_radio_field_render() {
 		$options = get_option( 'ek_options_settings' );
 		?>
-		<input type="radio" name="ek_options_settings[ek_radio_field]" <?php if (isset($options['ek_radio_field'])) checked( $options['ek_radio_field'], 1 ); ?> value="1" /> <label>Option One</label><br />
-		<input type="radio" name="ek_options_settings[ek_radio_field]" <?php if (isset($options['ek_radio_field'])) checked( $options['ek_radio_field'], 2 ); ?> value="2" /> <label>Option Two</label><br />
-		<input type="radio" name="ek_options_settings[ek_radio_field]" <?php if (isset($options['ek_radio_field'])) checked( $options['ek_radio_field'], 3 ); ?> value="3" /> <label>Option Three</label>
+		<input type="radio" name="ek_options_settings[ek_radio_field]" <?php if (isset($options['ek_radio_field'])) checked( $options['ek_radio_field'], 1 ); ?> value="#BEBEC9" /> <label>Pinkish Grey</label><br />
+		<input type="radio" name="ek_options_settings[ek_radio_field]" <?php if (isset($options['ek_radio_field'])) checked( $options['ek_radio_field'], 2 ); ?> value="#CCF5F5" /> <label>Mint</label><br />
+		<input type="radio" name="ek_options_settings[ek_radio_field]" <?php if (isset($options['ek_radio_field'])) checked( $options['ek_radio_field'], 3 ); ?> value="#FFE7CB" /> <label>Warm Beige</label>
 		<?php
 	}
 
@@ -95,7 +95,7 @@ function ek_settings_init() {
 		$options = get_option( 'ek_options_settings' );
 		?>
 		<select name="ek_options_settings[ek_select_field]">
-			<option value="#6495ed" <?php if (isset($options['ek_select_field'])) selected( $options['ek_select_field'], 1 ); ?>>Light Blue</option>
+			<option value="red" <?php if (isset($options['ek_select_field'])) selected( $options['ek_select_field'], 1 ); ?>>Light Blue</option>
 			<option value="#a9a9a9" <?php if (isset($options['ek_select_field'])) selected( $options['ek_select_field'], 2 ); ?>>Grey</option>
 		</select>
 	<?php

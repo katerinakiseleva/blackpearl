@@ -14,6 +14,16 @@
 
 get_header(); ?>
 
+<!-- Calling the option customization. -->
+
+<?php $options=get_option( 'ek_options_settings' ); ?>
+    <!-- Custom style from options page -->
+    <style>
+        div.site-info {
+	       background-color: <?php echo $options['ek_radio_field']; ?>
+        }
+    </style>
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 

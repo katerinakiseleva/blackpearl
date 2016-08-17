@@ -22,6 +22,14 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
+<?php $options=get_option( 'ek_options_settings' ); ?>
+    <!-- Custom style from options page -->
+    <style>
+        div.site-info {
+	       background-color: <?php echo $options['ek_radio_field']; ?>
+        }
+    </style>
+
 <?php wp_footer(); ?>
 
 </body>
