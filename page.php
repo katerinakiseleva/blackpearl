@@ -19,13 +19,17 @@ get_header(); ?>
 <?php $options=get_option( 'ek_options_settings' ); ?>
     <!-- Custom style from options page -->
     <style>
-		    nav#site-navigation.main-navigation{
-					background-color: <?php echo $options['ek_color_field']; ?>
-				}
         div#content.site-content {
 	       background-color: <?php echo $options['ek_color_field']; ?>
         }
     </style>
+		<?php $options=get_option( 'ek_options_settings' ); ?>
+					<!-- Custom style from options page -->
+					<style>
+					.site-title {
+						font-family: <?php echo $options['ek_font_field']; ?>
+					}
+					</style>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">

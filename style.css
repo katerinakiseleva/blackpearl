@@ -997,13 +997,10 @@ body {
 	position: relative;
 }
 
-.statement {
-	padding: 2em;
-	margin:2em;
-	color: red;
+.statement { /* This is to style the annoucement from the options page on site. */
 	text-align: center;
+	font-size: 3em;
 }
-
 
 
 /* @media screen and (max-width: 750px) {

@@ -104,7 +104,11 @@ add_action( 'widgets_init', 'blackpearl_widgets_init' );
 function blackpearl_scripts() {
 	wp_enqueue_style( 'blackpearl-style', get_stylesheet_uri() );
 
-	wp_enqueue_style('google_font', 'https://fonts.googleapis.com/css?family=Poiret+One');
+	wp_enqueue_style('default_font', 'https://fonts.googleapis.com/css?family=Poiret+One');
+	wp_enqueue_style('petit_font', 'https://fonts.googleapis.com/css?family=Petit+Formal+Script');
+	wp_enqueue_style('codystar_font', 'https://fonts.googleapis.com/css?family=Codystar');
+	wp_enqueue_style('cinzel_font', 'https://fonts.googleapis.com/css?family=Cinzel+Decorative');
+
 
 	wp_enqueue_script( 'blackpearl-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 

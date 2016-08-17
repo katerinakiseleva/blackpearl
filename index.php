@@ -14,6 +14,14 @@
 
 get_header(); ?>
 
+<?php $options=get_option( 'ek_options_settings' ); ?>
+			<!-- Custom style from options page -->
+			<style>
+				p {
+					font-family: <?php echo $options['ek_font_field']; ?>
+				}
+			</style>
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
