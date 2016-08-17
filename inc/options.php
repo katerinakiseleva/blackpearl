@@ -28,18 +28,18 @@ function ek_settings_init() {
 		'ek_options_page_section'
 	);
 
-	add_settings_field(
+	/*add_settings_field(
 		'ek_checkbox_field',
 		'Check your preference',
 		'ek_checkbox_field_render',
 		'theme_options',
 		'ek_options_page_section'
-	);
+	);*/
 
 	add_settings_field(
-		'ek_radio_field',
+		'ek_color_field',
 		'Choose an option',
-		'ek_radio_field_render',
+		'ek_color_field_render',
 		'theme_options',
 		'ek_options_page_section'
 	);
@@ -52,6 +52,8 @@ function ek_settings_init() {
 		'ek_options_page_section'
 	);
 
+	/* Options page customization
+	First option: Announcement: */
 
 	function ek_text_field_render() {
 		$options = get_option( 'ek_options_settings' );
@@ -60,20 +62,15 @@ function ek_settings_init() {
 		<?php
 	}
 
-	function ek_checkbox_field_render() {
-		$options = get_option( 'ek_options_settings' );
-	?>
-		<input type="checkbox" name="ek_options_settings[ek_checkbox_field]" <?php if (isset($options['ek_checkbox_field'])) checked( 'on', ($options['ek_checkbox_field']) ) ; ?> value="on" />
-		<label>Turn it On</label>
-		<?php
-	}
-
-	function ek_radio_field_render() {
+	/* Options page customization
+	First option: Background-color change: */
+	function ek_color_field_render() {
 		$options = get_option( 'ek_options_settings' );
 		?>
-		<input type="radio" name="ek_options_settings[ek_radio_field]" <?php if (isset($options['ek_radio_field'])) checked( $options['ek_radio_field'], 1 ); ?> value="#BEBEC9" /> <label>Pinkish Grey</label><br />
-		<input type="radio" name="ek_options_settings[ek_radio_field]" <?php if (isset($options['ek_radio_field'])) checked( $options['ek_radio_field'], 2 ); ?> value="#CCF5F5" /> <label>Mint</label><br />
-		<input type="radio" name="ek_options_settings[ek_radio_field]" <?php if (isset($options['ek_radio_field'])) checked( $options['ek_radio_field'], 3 ); ?> value="#FFE7CB" /> <label>Warm Beige</label>
+		<input type="radio" name="ek_options_settings[ek_color_field]" <?php if (isset($options['ek_color_field'])) checked( $options['ek_color_field'], 1 ); ?> value="#F3E7E8" /> <label>Default color</label><br />
+		<input type="radio" name="ek_options_settings[ek_color_field]" <?php if (isset($options['ek_color_field'])) checked( $options['ek_color_field'], 2 ); ?> value="#BEBEC9" /> <label>Pinkish Grey</label><br />
+		<input type="radio" name="ek_options_settings[ek_color_field]" <?php if (isset($options['ek_color_field'])) checked( $options['ek_color_field'], 3 ); ?> value="#CCF5F5" /> <label>Mint</label><br />
+		<input type="radio" name="ek_options_settings[ek_color_field]" <?php if (isset($options['ek_color_field'])) checked( $options['ek_color_field'], 4 ); ?> value="#FFE7CB" /> <label>Warm Beige</label>
 		<?php
 	}
 

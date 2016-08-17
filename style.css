@@ -1001,7 +1001,9 @@ body {
 	padding: 2em;
 	margin:2em;
 	color: red;
+	text-align: center;
 }
+
 
 
 /* @media screen and (max-width: 750px) {

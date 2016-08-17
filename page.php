@@ -19,8 +19,11 @@ get_header(); ?>
 <?php $options=get_option( 'ek_options_settings' ); ?>
     <!-- Custom style from options page -->
     <style>
+		    nav#site-navigation.main-navigation{
+					background-color: <?php echo $options['ek_color_field']; ?>
+				}
         div#content.site-content {
-	       background-color: <?php echo $options['ek_radio_field']; ?>
+	       background-color: <?php echo $options['ek_color_field']; ?>
         }
     </style>
 

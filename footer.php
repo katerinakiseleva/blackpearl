@@ -26,7 +26,7 @@
     <!-- Custom style from options page -->
     <style>
         div.site-info {
-	       background-color: <?php echo $options['ek_radio_field']; ?>
+	       background-color: <?php echo $options['ek_color_field']; ?>
         }
     </style>
 
