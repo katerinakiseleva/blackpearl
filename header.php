@@ -40,9 +40,14 @@
 			<?php
 			endif; ?>
 		</div><!-- .site-branding -->
+
 		<?php $options=get_option( 'ek_options_settings' );
+		/**
+		 * Calling the Site Announcement option to customize the Announcement text field in the header.
+		 */
 		echo$options['ek_text_field'] .'<br />';
 		 ?>
+
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'blackpearl' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>

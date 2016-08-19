@@ -10,17 +10,31 @@
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
  * @package blackpearl
+ *
+ * All the model photos on the website are a courtesy of the photographer Angelika Kitsuk, free to contact at kitsukandco@mail.ru
  */
 
 get_header(); ?>
 
 <?php $options=get_option( 'ek_options_settings' ); ?>
-			<!-- Custom style from options page -->
+  <!-- Calling the custom color option to change the background color in the content area on the Home page-->
+    <style>
+        div#content.site-content {
+	       background-color: <?php echo $options['ek_color_field']; ?>
+        }
+    </style>
+  <!-- Home page will display the color assigned to the value $options -->
+
+
+	<?php $options=get_option( 'ek_options_settings' ); ?>
+		<!-- Calling the custom font option to change the font on the Home page-->
 			<style>
-				p {
+				.site-title {
 					font-family: <?php echo $options['ek_font_field']; ?>
-				}
+					}
 			</style>
+   <!-- Website title will have the font assigned to the value $options -->
+
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">

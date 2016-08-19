@@ -11,7 +11,7 @@
 
 ?>
 
-	</div><!-- #content -->
+	</div><!-- #content that will be shown in the footer -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
@@ -22,13 +22,13 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
-<?php $options=get_option( 'ek_options_settings' ); ?>
-    <!-- Custom style from options page -->
+<?php $options=get_option( 'ek_options_settings' ); ?> <!-- Calling the custom color option to change the background color in the footer -->
     <style>
         div.site-info {
 	       background-color: <?php echo $options['ek_color_field']; ?>
         }
     </style>
+<!-- the footer will display the color assigned to the value $options -->
 
 <?php wp_footer(); ?>
 

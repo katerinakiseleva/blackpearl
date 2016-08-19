@@ -19,6 +19,8 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+
+All the model photos on the website are a courtesy of the photographer Angelika Kitsuk, free to contact at kitsukandco@mail.ru
 */
 
 /*--------------------------------------------------------------
@@ -536,11 +538,6 @@ a:active {
 .main-navigation {
 	clear: both;
 	display: block;
-	float: left;
-	width: 100%;
-	background: #988D90;
-	position: static;
-	padding-left:77px;
 }
 
 .main-navigation ul {
@@ -898,85 +895,106 @@ object {
 .gallery-caption {
 	display: block;
 }
-/* KATE's edits */
+
+/** KATE's edits
+* most of the sizes are in ems for responsiveness
+* some elements have position relative for responsiveness
+*/
 body {
 	width: 90%;
-	background: url('image/bubble.jpg');
+	background: url('image/bubble.jpg'); /* Picture taken by me */
 	background-size: cover;
   background-position: center center;
 	margin: auto;
-	font-family: 'Poiret One', cursive;
+	font-family: 'Poiret One', cursive; /* On of my favourite Google Font */
 }
 
-.site-branding{
+.site-branding{ /* Style for Website title and Description */
 	text-align: center;
 	padding:0.125em;
 }
-.site-title {
+.site-title { /* Style for Website title */
 	font-size: 3em;
 	font-family: 'Poiret One', cursive;
 	font-weight: bold;
 }
-.site-title a {
-	text-decoration: none;
+.site-title a { /* Another style for Website title since it is the link*/
+	text-decoration: none; /* Getting rid of text underline */
 }
-.site-description {
+.site-description {/* Style for Website Description */
 	font-size: 1.5em;
 	font-family: 'Dancing Script', cursive;
 }
 .entry-content {
 	position: relative;
 }
-#content {
+#content { /* Style for the content area */
 	padding: 1.25em;
 	background: #F3E7E8;
-	opacity: 0.9;
+	opacity: 0.9; /* Allows to see the background */
 }
-.site-header {
+.site-header { /* Style for the Website Header */
 	background-color: #EFDFE1;
 	position: relative;
 }
-.site-info {
+.site-info { /* Style for Website footer */
 	background-color: #EFDFE1;
 	position: relative;
 }
 
-.main-navigation {
+.main-navigation { /* Style for the Website menu */
 	font-size: 1.2em;
 	padding-top: 0;
 	position: relative;
+	text-align: center;
+	float: left;
+	width: 100%;
+	background: #988D90;
+	padding-left:230px; /* Centering the menu */
 }
 
-#masthead{
+#masthead{ /* Style for the Website header including the announcement and the menu */
 	padding-top: 3.125em;
 	opacity: 0.7;
 	position: relative;
 }
 
-#site-navigation{
+#site-navigation{ /* Style for the Website menu */
 	height: 100%;
 	width:100%;
+	text-align: center;
 	position: relative;
 }
-
-.entry-meta{
-	width:100%;
+#secondary.widget-area{
+	float: left;
 }
 
-/*--------------------------------------------------------------
-## Responsiveness - Most of the responsive code is used from lab 2 as guidance for this theme.
---------------------------------------------------------------*/
-
+#sidebar { /* Style for the sidebar widget */
+	max-width: 50%;
+	float: left;
+}
+#primary { /* Style for the Website content area */
+	float: left;
+}
 
 .statement { /* This is to style the annoucement from the options page on site. */
 	text-align: center;
 	font-size: 3em;
 }
-.homecustompost {
+
+.homecustompost { /* Style for the Custom home post */
 	float: left;
-	width: 30%;
+	width: 32%;
+	height: 45%;
+
 }
 
+/*--------------------------------------------------------------
+## Responsiveness -
+Most of the responsive code is used from lab 2 as guidance for this theme;
+Most of the elements already have styles for responsiveness;
+Media queries added to allow responsiveness on dofferent screen sizes.
+--------------------------------------------------------------*/
 
 @media screen and (max-width: 850px) {
 	.homecustompost {

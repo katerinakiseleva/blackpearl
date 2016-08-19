@@ -103,7 +103,7 @@ add_action( 'widgets_init', 'blackpearl_widgets_init' );
  */
 function blackpearl_scripts() {
 	wp_enqueue_style( 'blackpearl-style', get_stylesheet_uri() );
-
+	/* Function to enqueue default Google font and three other fonts for the Custom Option page. */
 	wp_enqueue_style('default_font', 'https://fonts.googleapis.com/css?family=Poiret+One');
 	wp_enqueue_style('petit_font', 'https://fonts.googleapis.com/css?family=Petit+Formal+Script');
 	wp_enqueue_style('codystar_font', 'https://fonts.googleapis.com/css?family=Codystar');
@@ -144,5 +144,7 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 
-
 require get_stylesheet_directory() .'/inc/options.php';
+/**
+ * Implement the Custom Options Page.
+ */
